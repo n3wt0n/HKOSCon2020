@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "e1doLh8SOo6ekQkYcRY0+sWwMwdc99rIywhBII17TCwWSlirhpHh73ZFlWHsce702h2H1WoJD8ybFpKhqpVR5Q==",
+  "success": true,
+  "projectFilePath": "C:\\Prj\\HKOSCon2020\\NetCoreWebApp\\NetCoreWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dabenveg\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
