@@ -1,0 +1,21 @@
+{
+  "name": "nodewebapp",
+  "version": "1.0.0",
+  "description": "HKOSCon Node WebApp demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Davide Benvegnu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "express": "^4.17.1",
+    "express-stormpath": "^4.0.0",
+    "forms": "^1.3.2",
+    "jade": "^1.11.0",
+    "xtend": "^4.0.2"
+  }
+}
