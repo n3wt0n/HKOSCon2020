@@ -1,3 +1,3 @@
 # DotNet Core App
 
-To show CI for .Net Core
+I use this app to show CI with Actions for .Net Core
