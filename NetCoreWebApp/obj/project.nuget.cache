@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e1doLh8SOo6ekQkYcRY0+sWwMwdc99rIywhBII17TCwWSlirhpHh73ZFlWHsce702h2H1WoJD8ybFpKhqpVR5Q==",
+  "dgSpecHash": "8PQvROWsOi/s+J3wWYKdjuQxk1yr0RS9cEDbhLtq/wA3X2ULgOys84c/SC/vERJ6mMV9hmiZ5gXnPt1lqxR1hw==",
   "success": true,
   "projectFilePath": "C:\\Prj\\HKOSCon2020\\NetCoreWebApp\\NetCoreWebApp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\dabenveg\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
