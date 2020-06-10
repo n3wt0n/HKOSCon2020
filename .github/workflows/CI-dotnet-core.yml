@@ -10,8 +10,13 @@ on:
     paths: 
     - 'NetCoreWebApp/**'
 
+env:
+  folderName: 'NetCoreWebApp'
+
 jobs:
   build:
+    env:
+      csprojName: 'NetCoreWebApp.csproj'
 
     runs-on: ubuntu-latest
 
@@ -22,15 +27,12 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-      
-    - name: Change dir to NetCore sln folder
-      run: cd NetCoreWebApp
-      
+            
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore $folderName/$csprojName
       
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build ${{ format('{0}/{1}', $folderName, $csprojName) }} --configuration Release --no-restore
       
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test ${{ format('{0}/{1}', $folderName, $csprojName) }} --no-restore --verbosity normal
