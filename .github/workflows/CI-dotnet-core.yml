@@ -23,6 +23,9 @@ jobs:
       with:
         dotnet-version: 3.1.101
       
+    - name: Change dir to NetCore sln folder
+      run: cd NetCoreWebApp
+      
     - name: Install dependencies
       run: dotnet restore
       
