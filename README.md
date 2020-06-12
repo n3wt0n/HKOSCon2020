@@ -1,7 +1,7 @@
 # HKOSCon 2020 - Demos
 Repo for my GH Actions sessions at the Hong Kong Opensource Conference 2020
 
-Slides: TBA
+Slides: https://www.slideshare.net/n3wt0n/github-actions-your-free-ci-engine-and-much-more
 
 Presentation Video: TBA
 
