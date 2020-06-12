@@ -7,16 +7,26 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
+
     steps:
-    - id: set-matrix
-      run: echo "::set-output name=matrix::{\"include\":[{\"project\":\"foo\",\"config\":\"Debug\"},{\"project\":\"bar\",\"config\":\"Release\"}]}"
+    - id: set-matrix 
+      name: Generate Matrix from File list
+      run: echo "::set-output name=matrix::{\"include\":[{\"fileName\":\"File1\",\"filePath\":\"/dir1/data/file1.csv\"},{\"fileName\":\"File2\",\"filePath\":\"/dirB/file2.csv\"}]}"
       
   job2:
     needs: job1
+
     runs-on: ubuntu-latest
+
     strategy:
       matrix: ${{fromJson(needs.job1.outputs.matrix)}}
+
     steps:
-    - run: build
+    - name: Do something
+      run: echo "Crunching File '${{ matrix.fileName }}' "
+    
+    - name: Do somethine more
+      run: echo "Pretending to do somthing on '${{ matrix.filePath }}'"
