@@ -1,5 +1,5 @@
 # This is a basic workflow to show the manual trigger
-name: CI
+name: Manual-Actions-Workflow
 
 on: 
   workflow_dispatch
