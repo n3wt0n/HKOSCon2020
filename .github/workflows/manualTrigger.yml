@@ -13,4 +13,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Say something
-      run: echo "Hi, I've been manually triggered!"
+      run: echo "Hi, I have been manually triggered!"
