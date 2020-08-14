@@ -16,3 +16,4 @@ jobs:
         destinationFolder: '/whatever/folder'
     - run: echo Files copied ${{ steps.myCompositeAction.outputs.copied-files }} 
       shell: bash
+
