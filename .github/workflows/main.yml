@@ -1,0 +1,18 @@
+# This is an example of using Composite Run Steps Actions
+
+name: CompositeExample
+
+on: [workflow_dispatch]
+
+jobs:
+  copy_files_job:
+    runs-on: ubuntu-latest
+    name: A job that copy files
+    steps:
+    - uses: actions/checkout@v2
+    - id: myCompositeAction
+      uses: n3wt0n/CompositeActionsArchive@v1
+      with:
+        destinationFolder: '/whatever/folder'
+    - run: echo Files copied ${{ steps.myCompositeAction.outputs.copied-files }} 
+      shell: bash
