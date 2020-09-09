@@ -2,7 +2,7 @@ name: Dynamic Matrix
 
 on: 
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '0 * * * *'
     
 jobs:
   job1:
