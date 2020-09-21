@@ -22,8 +22,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Create the file
         run: |
-          echo "First Line" > output.txt
-          echo "Second Line" > output.txt
+          echo "First Line" >> output.txt
+          echo "Second Line" >> output.txt
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.1.4
