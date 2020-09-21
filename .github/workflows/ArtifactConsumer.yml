@@ -6,6 +6,10 @@ name: Artifact Consumer
 # events but only for the master branch
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Artifact Publisher"]
+    types:
+      - success
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
