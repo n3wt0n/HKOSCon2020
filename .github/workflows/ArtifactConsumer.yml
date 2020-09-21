@@ -1,0 +1,31 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Artifact Consumer
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  release:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+     
+    - name: Download workflow artifact
+      # You may pin to the exact commit or the version.
+      # uses: dawidd6/action-download-artifact@c5a6a7120417fda051bda8e6d4188aded2810030
+      uses: dawidd6/action-download-artifact@v2.8.0
+      with:
+        # Workflow name
+        workflow: ArtifactProducer.yml
+        # Artifact name (download all artifacts in not specified)
+        name: OutputTXT
+
+    - name: Print out release file
+      run: cat output.txt
