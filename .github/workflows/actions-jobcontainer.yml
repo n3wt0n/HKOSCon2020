@@ -1,0 +1,10 @@
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    services:
+      redis: redis:latest
+    container: alpine:3
+    steps:
+    - run: ./build.sh
