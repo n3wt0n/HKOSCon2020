@@ -1,3 +1,5 @@
+name: JobContainers
+
 on: [workflow_dispatch]
 
 jobs:
