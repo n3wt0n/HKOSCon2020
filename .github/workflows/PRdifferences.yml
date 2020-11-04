@@ -23,5 +23,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          files=$( git diff master..${{ github.head_ref }} --name-only )
+          files=$( git diff master..${{ github.ref }} --name-only )
           echo $files
