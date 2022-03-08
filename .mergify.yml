@@ -1,11 +1,9 @@
 pull_request_rules:
   - name: Automatic merge on approval
     conditions:
-      - and:
-        - "#approved-reviews-by>=1"
-        - or:
-            - files=README.md
-            - "#files=1"
+      - or:
+          - files=README.md
+          - "#files=1"
     actions:
       merge:
         method: merge
