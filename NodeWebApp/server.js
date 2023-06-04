@@ -7,7 +7,7 @@ app.set('view engine', 'jade');
  
 app.get('/', function(req, res) {
   res.render('home', {
-    title: 'Welcome'
+    title: 'Welcome Folks!'
   });
 });
  
